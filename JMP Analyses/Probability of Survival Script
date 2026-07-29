@@ -1,0 +1,167 @@
+#Script used to quantify probabilty of survival of each line on the two diets and generate the 95% confidence intervals
+
+Distribution(
+	SendToByGroup( {:Isofemale Line == "SEC002", :Treatment == "No Toxin"} ),
+	SendToByGroup(
+		{:Isofemale Line == "SEC002", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Vertical( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC002", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC003", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC003", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC005", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC005", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC006", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC006", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC008", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC008", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC009", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC009", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC010", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC010", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC011", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC011", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC012", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC012", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC014", :Treatment == "No Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	SendToByGroup(
+		{:Isofemale Line == "SEC014", :Treatment == "Toxin"},
+		Nominal Distribution(
+			Column( :Data ),
+			Histogram( 0 ),
+			Confidence Interval( 0.95 )
+		)
+	),
+	By( :Isofemale Line, :Treatment )
+);
