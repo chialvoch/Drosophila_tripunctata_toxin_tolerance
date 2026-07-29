@@ -1,3 +1,4 @@
+#Script used to complete a generalized linear model analysis of the binomial survival data. It includes a logit link function, over dispersion tests and intervals, and Firth bias-adjusted estimates.
 
 Fit Model(
 	Y( :Data ),
