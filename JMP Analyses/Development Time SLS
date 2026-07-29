@@ -1,0 +1,16 @@
+#Script to complete standard least squares of analysis of the development time data (days to the appearance of the first pupae; vials that produced no pupae given a time of 100 days)
+
+Fit Model(
+	Y( :Development Time ),
+	Effects( :Isofemale Line, :Treatment, :Isofemale Line * :Treatment ),
+	Personality( "Standard Least Squares" ),
+	Emphasis( "Effect Leverage" ),
+	Run(
+		:Development Time << {Summary of Fit( 1 ), Analysis of Variance( 1 ),
+		Parameter Estimates( 1 ), Lack of Fit( 0 ), Scaled Estimates( 0 ),
+		Plot Actual by Predicted( 1 ), Plot Regression( 0 ),
+		Plot Residual by Predicted( 1 ), Plot Studentized Residuals( 0 ),
+		Plot Effect Leverage( 1 ), Plot Residual by Normal Quantiles( 0 ),
+		Box Cox Y Transformation( 0 )}
+	)
+);
