@@ -1,0 +1,11 @@
+
+Fit Model(
+	Y( :Data ),
+	Effects( :Isofemale Line, :Treatment, :Isofemale Line * :Treatment ),
+	Personality( "Generalized Linear Model" ),
+	GLM Distribution( "Binomial" ),
+	Link Function( "Logit" ),
+	Overdispersion Tests and Intervals( 1 ),
+	"Firth Bias-Adjusted Estimates"n( 1 ),
+	Run
+);
